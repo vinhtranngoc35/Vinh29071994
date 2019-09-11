@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <img  src="nuoc1.png" id="pic1"  onclick="click1()" width="300" height="100"><br>
+    <img  src="nuoc2.png" id="pic2"  onclick="click2()" width="300" height="100"><br>
+    <img  src="nuoc3.png" id="pic3"  onclick="click3()" width="300" height="100"><br>
+    <img  src="nuoc4.png" id="pic4"  onclick="click4()" width="300" height="100"><br>
+
+
+
+
+
+</body>
+<script>
+    let one = document.getElementById("pic1").src;
+    let two = document.getElementById("pic2").src;
+    let three = document.getElementById("pic3").src;
+    let four = document.getElementById("pic4").src;
+    function click1() {
+        let Random = Math.floor((Math.random()*3) +1 );
+        switch (Random) {
+            case 1:
+                one="nuoc1.png";
+                
+                break;
+            case 2:
+                one="co1.png";
+
+                break;
+            case 3:
+                one = "dong3.png";
+        }
+    }
+    function click2() {
+        let Random = Math.floor(Math.random()*2);
+        switch (Random) {
+            case 1:
+                water.src="nuoc2.png";
+                water.alt= "1";
+                break;
+            case 2:
+                tree.src="co2.png";
+                tree.alt = "2";
+                break;
+
+        }
+        finish()
+    }
+    function click3() {
+        let Random = Math.floor(Math.random()*2);
+        switch (Random) {
+            case 1:
+                water.src="nuoc3.png";
+                water.alt= "1";
+                break;
+            case 2:
+                water.src="co3.png";
+                three.alt = "2";
+                break;
+
+        }
+        finish()
+    }
+    function click4() {
+        let Random = Math.floor(Math.random()*3);
+        switch (Random) {
+            case 1:
+                water.src="nuoc4.png";
+                water.alt= "1";
+                break;
+            case 2:
+                water.src="co4.png";
+                four.alt = "2";
+                break;
+
+        }
+        finish()
+    }
+function finish() {
+    return one.alt + two.alt + three.alt + four.alt === 1111  || one.alt + two.alt + three.alt + four.alt === 2222
+}
+
+</script>
+</html>
